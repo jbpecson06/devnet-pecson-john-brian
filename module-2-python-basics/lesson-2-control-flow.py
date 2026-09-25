@@ -1,7 +1,7 @@
 """
 Module 2 — Lesson 2: Control Flow (if / elif / else)
-Student: [your name]
-Date: [date]
+Student: John Brian O. Pecson
+Date: 9/25/26
 
 ============================================
 WHAT IS THIS TOPIC? (explain it like you're
@@ -13,10 +13,12 @@ teaching a friend who's never coded before)
 ============================================
 KEY VOCABULARY
 ============================================
-- condition:
-- if / elif / else:
-- comparison operator:
-- boolean expression:
+- condition: it is a rule or a decision that determines if the block of code will run or not
+- if / elif / else: if means if the condition meets the code will run, elif means 
+if the first condition fails the next condition will test if it meets, and 
+then else means if all else fails, this block of code will run
+- comparison operator: this is used to compare two values
+- boolean expression: this evaluates in true or false in conditions
 (add more as needed)
 
 
@@ -26,16 +28,19 @@ MY OWN EXAMPLE(S)
 Write at least one working example below that you
 came up with yourself — not copied from class.
 """
+grade = 88.6
+passingGrade = 75
 
-# --- your code example goes here ---
-
+if grade >= passingGrade:
+    print("You passed.")
+else:
+    print("You failed.")
 
 """
 ============================================
 A MISTAKE I MADE (or one I want to avoid)
 ============================================
-[what's something confusing or easy to get wrong
-about this topic?]
+- I only tend to forget the colon after the if or else.
 
 
 ============================================
