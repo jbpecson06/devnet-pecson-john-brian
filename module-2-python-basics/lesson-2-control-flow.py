@@ -7,7 +7,7 @@ Date: 9/25/26
 WHAT IS THIS TOPIC? (explain it like you're
 teaching a friend who's never coded before)
 ============================================
-[write your own explanation here]
+- A control flow is like the one who can set and make decisions of what condition would run if a certain requirement is met.
 
 
 ============================================
