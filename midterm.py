@@ -12,14 +12,15 @@ def display_menu():
     print("2. View all movies")
     print("3. Count watched vs unwatched")
     print("4. Find a movie")
-    print("5. Exit")
+    print("5. Remove a Movie")
+    print("6. Exit")
     return input("Choose an option: ")
 
 
 def add_movie(movie_list):
     added_movie = input("Enter Movie Title: ")
     added_director = input("Enter Director: ")
-    movie_status = input("Status (Watched/Unwatched): ").strip().capitalize()
+    movie_status = input("Status (Watched/Unwatched): ")
 
     movie = f"{added_movie} - {added_director} - {movie_status}"
     movie_list.append(movies)
@@ -29,9 +30,14 @@ def add_movie(movie_list):
 
 
 def view_movies(movie_list):    
-    # loop through and print every movie
-    # handle empty list
-    pass
+    if not movie_list:
+        print("")
+        print("No movies in the collection")
+        print("")
+        return
+ 
+    for number, movie in enumerate(movie_list, start=1):
+        print(f"{number}. {movie}")
 
 
 def count_watched_unwatched(movie_list):
@@ -49,6 +55,11 @@ def find_movie(movie_list):
     pass
 
 
+def remove_movie(movie_list):
+    # your code here
+    pass
+
+
 def main():
     while True:
         choice = display_menu()
@@ -62,6 +73,8 @@ def main():
         elif choice == "4":
             find_movie(movies)
         elif choice == "5":
+            remove_movie(movies)
+        elif choice == "6":
             print("Exit.")
             break
         else:
