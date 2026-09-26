@@ -20,7 +20,7 @@ def display_menu():
 def add_movie(movie_list):
     added_movie = input("Enter Movie Title: ")
     added_director = input("Enter Director: ")
-    movie_status = input("Status (Watched/Unwatched): ")
+    movie_status = input("Status: ")
 
     movie = f"{added_movie} - {added_director} - {movie_status}"
     movie_list.append(movies)
@@ -56,7 +56,7 @@ def find_movie(movie_list):
 
 
 def remove_movie(movie_list):
-    # your code here
+    
     pass
 
 
